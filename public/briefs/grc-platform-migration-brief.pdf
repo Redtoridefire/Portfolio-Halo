@@ -1,0 +1,90 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 1624 >> stream
+BT
+/F1 10 Tf
+50 780 Td
+(# Enterprise GRC Platform Migration  Executive Brief) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(**Company:** American Express  ) Tj
+0 -14 Td
+(**Period:** 2025  ) Tj
+0 -14 Td
+(**Domain:** GRC) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Executive Summary) Tj
+0 -14 Td
+(Co-led migration from legacy Archer workflows to a modern GRC platform with zero disruption to control operations.) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Business Challenge) Tj
+0 -14 Td
+(Legacy workflows constrained reporting, automation, and change agility. Migration risk was high due to dependency on exception workflows and hist) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Solution Approach) Tj
+0 -14 Td
+(Executed phased migration with dual-run validation, workflow parity testing, data quality checkpoints, and control owner training. Embedded autom) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Outcomes) Tj
+0 -14 Td
+(Transition completed without material compliance disruption. Reporting quality improved and operational overhead declined through streamlined wor) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Key Metrics) Tj
+0 -14 Td
+(- **Historical Data Preserved:** 100%) Tj
+0 -14 Td
+(- **Compliance Downtime:** 0) Tj
+0 -14 Td
+(- **Run-Cost Reduction:** 35%) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Technology & Platforms) Tj
+0 -14 Td
+(- RSA Archer) Tj
+0 -14 Td
+(- ServiceNow GRC) Tj
+0 -14 Td
+(- SQL) Tj
+0 -14 Td
+(- Python) Tj
+0 -14 Td
+(- Power BI) Tj
+0 -14 Td
+(- Workflow Automation) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Next Step) Tj
+0 -14 Td
+(For a tailored adaptation of this playbook to your environment, book a strategy call: https://calendly.com/mikeczarnecki/new-meeting-1) Tj
+0 -14 Td
+( ) Tj
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1987
+%%EOF

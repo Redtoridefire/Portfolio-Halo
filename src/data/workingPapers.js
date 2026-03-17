@@ -1,0 +1,81 @@
+// Thought Leadership / Working Papers Data
+/* commit fix */
+
+export const workingPapers = [
+  {
+    id: "agentic-ai-security",
+    title: "Agentic AI 2.0: Security Considerations for Autonomous Systems",
+    category: "AI Security",
+    date: "2025",
+    abstract: "A comprehensive framework for securing autonomous AI agents in enterprise environments. Covers chain-of-thought leakage, memory persistence risks, action authorization gates, and confidential computing for model protection.",
+    topics: ["Agentic AI", "LLM Security", "Autonomous Systems", "Confidential Computing"],
+    pages: 45,
+    featured: true,
+    downloadUrl: "/papers/agentic-ai-security-framework.pdf"
+  },
+  {
+    id: "ai-governance-framework",
+    title: "Enterprise AI Governance Framework for Financial Services",
+    category: "AI Governance",
+    date: "2025",
+    abstract: "Practical guidance for implementing AI governance in regulated financial institutions. Includes policy templates, risk assessment matrices, and control mappings to NIST AI RMF and ISO 42001.",
+    topics: ["AI Governance", "Financial Services", "NIST AI RMF", "ISO 42001"],
+    pages: 62,
+    featured: true,
+    downloadUrl: "/papers/enterprise-ai-governance-framework.pdf",
+  },
+  {
+    id: "zero-trust-llm",
+    title: "Zero Trust Architecture in the Age of Large Language Models",
+    category: "Cloud Security",
+    date: "2024",
+    abstract: "How traditional Zero Trust principles must evolve to address LLM-specific threats including prompt injection, data exfiltration through AI tools, and identity-based access control for AI systems.",
+    topics: ["Zero Trust", "LLM Security", "Cloud Security", "Identity Management"],
+    pages: 38,
+    featured: true,
+    downloadUrl: "/papers/zero-trust-llm-architecture.pdf",
+  },
+  {
+    id: "board-cyber-risk",
+    title: "Communicating Cyber Risk to the Board: A Practical Guide",
+    category: "Leadership",
+    date: "2024",
+    abstract: "Strategies for translating technical security metrics into business-relevant risk narratives. Includes templates for board memos, KRI frameworks, and quantitative risk scoring methodologies.",
+    topics: ["Board Communication", "Risk Management", "FAIR", "Executive Reporting"],
+    pages: 28,
+    featured: false,
+    downloadUrl: "/papers/board-cyber-risk-guide.pdf",
+  },
+  {
+    id: "devsecops-transformation",
+    title: "DevSecOps Transformation: From Bottleneck to Business Enabler",
+    category: "Security Engineering",
+    date: "2023",
+    abstract: "A case study-driven approach to embedding security into CI/CD pipelines. Covers automated security gates, developer enablement, and measuring security program ROI.",
+    topics: ["DevSecOps", "CI/CD Security", "Application Security", "Automation"],
+    pages: 35,
+    featured: false,
+    downloadUrl: "/papers/devsecops-transformation-guide.pdf",
+  },
+  {
+    id: "mitre-attack-operationalization",
+    title: "Operationalizing MITRE ATT&CK for Threat Detection",
+    category: "Threat Detection",
+    date: "2023",
+    abstract: "Step-by-step methodology for mapping existing detections to ATT&CK, identifying coverage gaps, and building a threat-informed defense strategy.",
+    topics: ["MITRE ATT&CK", "Threat Detection", "SIEM", "Detection Engineering"],
+    pages: 42,
+    featured: false,
+    downloadUrl: "/papers/mitre-attack-operationalization.pdf",
+  },
+];
+
+export const paperCategories = [
+  "All",
+  "AI Security",
+  "AI Governance", 
+  "Cloud Security",
+  "Leadership",
+  "Security Engineering",
+  "Threat Detection",
+];

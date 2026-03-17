@@ -1,0 +1,90 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 1653 >> stream
+BT
+/F1 10 Tf
+50 780 Td
+(# AI-Enhanced Threat Intelligence Fusion  Executive Brief) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(**Company:** Capital One  ) Tj
+0 -14 Td
+(**Period:** 2023-2024  ) Tj
+0 -14 Td
+(**Domain:** AI Security) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Executive Summary) Tj
+0 -14 Td
+(Built a fusion pipeline that translated raw threat signals into prioritized, business-relevant defense actions.) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Business Challenge) Tj
+0 -14 Td
+(Threat intelligence inputs were distributed across multiple feeds and analyst workflows, creating lag between indicator discovery and defensive a) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Solution Approach) Tj
+0 -14 Td
+(Created a normalized intelligence graph with NLP-based IOC/TTP extraction, ATT&CK correlation, and campaign clustering. Added business-context sc) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Outcomes) Tj
+0 -14 Td
+(Improved speed and quality of threat-informed decisions. Intelligence shifted from passive reporting to operationally actionable planning for SOC) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Key Metrics) Tj
+0 -14 Td
+(- **Briefing Prep Time:** 3d  3h) Tj
+0 -14 Td
+(- **Campaign Correlation Lift:** +40%) Tj
+0 -14 Td
+(- **Actionable Intel Ratio:** 90%) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Technology & Platforms) Tj
+0 -14 Td
+(- ThreatQ) Tj
+0 -14 Td
+(- Recorded Future) Tj
+0 -14 Td
+(- NLP Pipelines) Tj
+0 -14 Td
+(- MITRE ATT&CK) Tj
+0 -14 Td
+(- Splunk) Tj
+0 -14 Td
+(- Graph Correlation) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Next Step) Tj
+0 -14 Td
+(For a tailored adaptation of this playbook to your environment, book a strategy call: https://calendly.com/mikeczarnecki/new-meeting-1) Tj
+0 -14 Td
+( ) Tj
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+2016
+%%EOF

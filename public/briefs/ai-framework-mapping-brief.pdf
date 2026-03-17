@@ -1,0 +1,88 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 1631 >> stream
+BT
+/F1 10 Tf
+50 780 Td
+(# AI Compliance Framework Mapping Engine  Executive Brief) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(**Company:** American Express  ) Tj
+0 -14 Td
+(**Period:** 2025  ) Tj
+0 -14 Td
+(**Domain:** AI Security) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Executive Summary) Tj
+0 -14 Td
+(Automated control crosswalks across major frameworks to accelerate audit readiness and reduce governance duplication.) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Business Challenge) Tj
+0 -14 Td
+(Security and risk teams were repeatedly mapping overlapping controls across NIST, ISO, PCI, OCC, NYDFS, and internal standards through manual spr) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Solution Approach) Tj
+0 -14 Td
+(Designed an NLP-assisted control mapping engine with confidence scoring, human validation checkpoints, and reusable control objects. Integrated o) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Outcomes) Tj
+0 -14 Td
+(Reduced framework translation friction and improved consistency in control interpretation. Teams spent less time on mapping mechanics and more ti) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Key Metrics) Tj
+0 -14 Td
+(- **Manual Mapping Effort:** -72%) Tj
+0 -14 Td
+(- **Framework Crosswalk Speed:** +4.5x) Tj
+0 -14 Td
+(- **Audit Prep Cycle:** -45%) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Technology & Platforms) Tj
+0 -14 Td
+(- ServiceNow GRC) Tj
+0 -14 Td
+(- NLP) Tj
+0 -14 Td
+(- Control Taxonomy) Tj
+0 -14 Td
+(- Power BI) Tj
+0 -14 Td
+(- Policy Knowledge Graph) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Next Step) Tj
+0 -14 Td
+(For a tailored adaptation of this playbook to your environment, book a strategy call: https://calendly.com/mikeczarnecki/new-meeting-1) Tj
+0 -14 Td
+( ) Tj
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1994
+%%EOF

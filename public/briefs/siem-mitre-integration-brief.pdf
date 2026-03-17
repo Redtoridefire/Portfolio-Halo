@@ -1,0 +1,88 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 1574 >> stream
+BT
+/F1 10 Tf
+50 780 Td
+(# SIEM & MITRE ATT&CK Integration  Executive Brief) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(**Company:** Capital One  ) Tj
+0 -14 Td
+(**Period:** 2021-2023  ) Tj
+0 -14 Td
+(**Domain:** Threat Detection) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Executive Summary) Tj
+0 -14 Td
+(Operationalized ATT&CK-driven detection strategy inside SIEM to improve coverage visibility and response quality.) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Business Challenge) Tj
+0 -14 Td
+(Detection logic lacked a unified adversary framework, making it difficult to prioritize coverage gaps and measure defensive maturity.) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Solution Approach) Tj
+0 -14 Td
+(Mapped existing detections to ATT&CK techniques, prioritized high-impact gaps, and developed new detections with coverage heatmaps and efficacy d) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Outcomes) Tj
+0 -14 Td
+(Created a repeatable detection governance model tied to adversary behavior. SOC planning became more strategic and measurable.) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Key Metrics) Tj
+0 -14 Td
+(- **ATT&CK Coverage:** 35%  78%) Tj
+0 -14 Td
+(- **MTTD:** -60%) Tj
+0 -14 Td
+(- **Security Tech Adoption:** +40%) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Technology & Platforms) Tj
+0 -14 Td
+(- Splunk ES) Tj
+0 -14 Td
+(- MITRE ATT&CK) Tj
+0 -14 Td
+(- Detection Engineering) Tj
+0 -14 Td
+(- Threat Intel) Tj
+0 -14 Td
+(- Python) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Next Step) Tj
+0 -14 Td
+(For a tailored adaptation of this playbook to your environment, book a strategy call: https://calendly.com/mikeczarnecki/new-meeting-1) Tj
+0 -14 Td
+( ) Tj
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1937
+%%EOF

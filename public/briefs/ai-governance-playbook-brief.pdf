@@ -1,0 +1,90 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 1681 >> stream
+BT
+/F1 10 Tf
+50 780 Td
+(# Enterprise AI Governance Playbook  Executive Brief) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(**Company:** American Express  ) Tj
+0 -14 Td
+(**Period:** 2025  ) Tj
+0 -14 Td
+(**Domain:** AI Security) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Executive Summary) Tj
+0 -14 Td
+(Built an enterprise AI governance operating model that moved LLM adoption from ad-hoc experimentation to controlled, board-visible execution.) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Business Challenge) Tj
+0 -14 Td
+(Business units were rapidly deploying Copilot and custom LLM use-cases with inconsistent controls, fragmented approval paths, and no unified risk) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Solution Approach) Tj
+0 -14 Td
+(Established a cross-functional AI Governance Playbook aligned to NIST AI RMF and ISO 42001. Implemented intake tiers, model risk scoring, approve) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Outcomes) Tj
+0 -14 Td
+(Created a repeatable governance path now used across business units. AI deployments moved from one-off approvals to standardized lifecycle contro) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Key Metrics) Tj
+0 -14 Td
+(- **AI Use-Cases Governed:** 50+) Tj
+0 -14 Td
+(- **Policy-to-Control Coverage:** 100%) Tj
+0 -14 Td
+(- **High-Risk Launch Delays:** -65%) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Technology & Platforms) Tj
+0 -14 Td
+(- Microsoft Copilot) Tj
+0 -14 Td
+(- Azure OpenAI) Tj
+0 -14 Td
+(- ServiceNow GRC) Tj
+0 -14 Td
+(- Power BI) Tj
+0 -14 Td
+(- NIST AI RMF) Tj
+0 -14 Td
+(- ISO 42001) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Next Step) Tj
+0 -14 Td
+(For a tailored adaptation of this playbook to your environment, book a strategy call: https://calendly.com/mikeczarnecki/new-meeting-1) Tj
+0 -14 Td
+( ) Tj
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+2044
+%%EOF

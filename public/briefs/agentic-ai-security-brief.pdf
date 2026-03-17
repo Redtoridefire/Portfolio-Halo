@@ -1,0 +1,88 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 1646 >> stream
+BT
+/F1 10 Tf
+50 780 Td
+(# Agentic AI Security Framework  Executive Brief) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(**Company:** American Express  ) Tj
+0 -14 Td
+(**Period:** 2025  ) Tj
+0 -14 Td
+(**Domain:** AI Security) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Executive Summary) Tj
+0 -14 Td
+(Defined enterprise controls for autonomous AI agents including action authorization, memory governance, and runtime isolation.) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Business Challenge) Tj
+0 -14 Td
+(Agentic systems could chain tools, persist state, and take autonomous actions across enterprise systems. Traditional app controls were not design) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Solution Approach) Tj
+0 -14 Td
+(Designed a tiered agent autonomy model with mandatory guardrails by risk class. Implemented action gating, scoped memory retention, human-in-the-) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Outcomes) Tj
+0 -14 Td
+(Provided a production-ready path to deploy agentic workflows without sacrificing governance. Security reviews shifted from subjective debate to m) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Key Metrics) Tj
+0 -14 Td
+(- **Agent Patterns Standardized:** 8) Tj
+0 -14 Td
+(- **Critical Risk Controls:** 15+) Tj
+0 -14 Td
+(- **Governed Agent Launches:** 100%) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Technology & Platforms) Tj
+0 -14 Td
+(- Autonomous Agents) Tj
+0 -14 Td
+(- Intel TDX) Tj
+0 -14 Td
+(- AWS Nitro Enclaves) Tj
+0 -14 Td
+(- Policy Engines) Tj
+0 -14 Td
+(- LLM Red Teaming) Tj
+0 -14 Td
+( ) Tj
+0 -14 Td
+(## Next Step) Tj
+0 -14 Td
+(For a tailored adaptation of this playbook to your environment, book a strategy call: https://calendly.com/mikeczarnecki/new-meeting-1) Tj
+0 -14 Td
+( ) Tj
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+2009
+%%EOF
