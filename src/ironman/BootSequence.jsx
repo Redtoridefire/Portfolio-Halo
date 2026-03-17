@@ -25,9 +25,10 @@ export default function BootSequence({ onComplete }) {
   const handleEnter = useCallback(() => {
     if (!showCTA || exiting) return;
     soundEngine.enable();
-    soundEngine.playBootComplete();
+    // Play the cinematic reactor power-up then transition
+    soundEngine.playReactorPowerUp();
     setExiting(true);
-    setTimeout(onComplete, 800);
+    setTimeout(onComplete, 1000);
   }, [showCTA, exiting, onComplete]);
 
   // Keyboard listener
@@ -41,12 +42,17 @@ export default function BootSequence({ onComplete }) {
 
   // Boot sequence progression
   useEffect(() => {
-    soundEngine.playBoot();
+    // Initialize audio on user interaction (first page load — browser policy)
+    soundEngine.init();
+    // Small delay so AudioContext can spin up before we play
+    setTimeout(() => soundEngine.playBoot(), 200);
 
     const timers = BOOT_LINES.map((line) =>
       setTimeout(() => {
         setVisibleLines((prev) => [...prev, line]);
         setProgress(line.progress);
+        // Play a small beep on each boot line
+        if (soundEngine.enabled) soundEngine.playClick();
       }, line.delay)
     );
 
