@@ -25,8 +25,8 @@ export default function BootSequence({ onComplete }) {
   const handleEnter = useCallback(() => {
     if (!showCTA || exiting) return;
     soundEngine.enable();
-    // Play the cinematic reactor power-up then transition
-    soundEngine.playReactorPowerUp();
+    // Play jarvis-online.mp3 if uploaded, otherwise fall back to synthesized power-up
+    soundEngine.playFile('jarvis-online', () => soundEngine.playReactorPowerUp(), 0.85);
     setExiting(true);
     setTimeout(onComplete, 1000);
   }, [showCTA, exiting, onComplete]);

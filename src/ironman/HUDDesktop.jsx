@@ -261,9 +261,9 @@ export default function HUDDesktop() {
 
   // On desktop mount: start ambient hum + open default panel
   useEffect(() => {
-    // Brief startup sound, then ambient hum
+    // Play pulser-blast.mp3 the moment the HUD appears, fallback to boot chord
     setTimeout(() => {
-      soundEngine.playBootComplete();
+      soundEngine.playFile('pulser-blast', () => soundEngine.playBootComplete(), 0.9);
       setTimeout(() => soundEngine.startAmbientHum(), 1200);
     }, 300);
 

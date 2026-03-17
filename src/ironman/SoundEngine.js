@@ -1,16 +1,14 @@
 /**
  * Iron Man / J.A.R.V.I.S. Sound Engine
  * ─────────────────────────────────────
- * Synthesizes cinematic Iron Man UI sounds entirely via Web Audio API.
- * No external audio files required.
+ * Supports both real audio files (dropped into /public/sounds/) AND
+ * fully synthesized fallbacks via Web Audio API.
  *
- * Sound design goals:
- *  • Reactor startup — deep power-up rumble → harmonic build → triumphant chord
- *  • HUD beeps      — crisp metallic pings with slight reverb tail
- *  • Panel open/close — holographic "materialize" / "dissolve" sweeps
- *  • Scan           — ascending tonal sweep with resonance
- *  • Ambient hum    — subtle 40 Hz arc reactor drone (optional looping)
- *  • Boot complete  — JARVIS-style ascending major chord
+ * Expected files in /public/sounds/ (all optional — synth fallback if missing):
+ *   jarvis-online.mp3   — plays when user clicks ENTER SYSTEM on boot screen
+ *   pulser-blast.mp3    — plays when the HUD desktop first appears
+ *
+ * All other sounds are synthesized (no files needed).
  */
 
 class SoundEngine {
@@ -21,6 +19,7 @@ class SoundEngine {
     this.ambientGain = null;
     this.enabled = false;
     this._initialized = false;
+    this._audioCache = {}; // keyed by filename stem → HTMLAudioElement
   }
 
   // ── Init ──────────────────────────────────────────────────────────────────
@@ -34,6 +33,9 @@ class SoundEngine {
       this.masterGain.connect(this.audioCtx.destination);
       this._initialized = true;
       this.enabled = true;
+      // Pre-load the known audio files so they're ready instantly
+      this._preload('jarvis-online');
+      this._preload('pulser-blast');
     } catch {
       // Audio not supported
     }
@@ -46,6 +48,47 @@ class SoundEngine {
   enable() {
     if (!this._initialized) this.init();
     this.enabled = true;
+  }
+
+  // ── Audio file player ─────────────────────────────────────────────────────
+
+  /**
+   * Pre-fetch an audio file into cache. Called automatically on init.
+   * Silently ignores 404s so missing files never break anything.
+   */
+  _preload(name) {
+    if (this._audioCache[name]) return;
+    const audio = new Audio(`/sounds/${name}.mp3`);
+    audio.preload = 'auto';
+    // Test that the file actually exists — if it 404s, remove from cache
+    audio.addEventListener('error', () => {
+      delete this._audioCache[name];
+    }, { once: true });
+    this._audioCache[name] = audio;
+  }
+
+  /**
+   * Play a file from /public/sounds/<name>.mp3
+   * Falls back to `fallback()` (a synthesized sound function) if file is
+   * missing, not loaded, or audio is disabled.
+   *
+   * @param {string}   name     — filename without extension
+   * @param {Function} fallback — called if file unavailable
+   * @param {number}   volume   — 0.0 – 1.0, default 1.0
+   */
+  playFile(name, fallback, volume = 1.0) {
+    const audio = this._audioCache[name];
+    if (audio && this.enabled && audio.readyState >= 2) {
+      // readyState >= 2 means HAVE_CURRENT_DATA — safe to play
+      audio.volume = Math.min(1, volume);
+      audio.currentTime = 0;
+      audio.play().catch(() => {
+        // Autoplay blocked or file error — run fallback
+        if (fallback) fallback();
+      });
+    } else if (fallback) {
+      fallback();
+    }
   }
 
   toggle() {
