@@ -1,7 +1,7 @@
 {
   "name": "michael-czarnecki-portfolio",
-  "version": "2.5.0",
-  "description": "Professional portfolio for Michael Czarnecki - Cybersecurity Executive",
+  "version": "3.0.0",
+  "description": "Michael Czarnecki - J.A.R.V.I.S. Portfolio Interface - Iron Man HUD",
   "main": "src/index.jsx",
   "scripts": {
     "start": "react-scripts start",
@@ -9,6 +9,7 @@
     "vercel-build": "react-scripts build"
   },
   "dependencies": {
+    "framer-motion": "^12.37.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
