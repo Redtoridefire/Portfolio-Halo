@@ -99,7 +99,11 @@ export default function JarvisChat() {
   };
 
   const handleToggle = () => {
-    soundEngine.playClick();
+    if (!open) {
+      soundEngine.playJarvisActivate();
+    } else {
+      soundEngine.playPanelClose();
+    }
     setOpen((o) => !o);
   };
 

@@ -183,6 +183,91 @@ export default function PersonnelPanel() {
         </div>
         <p className="exp-card-summary">Concentration in Cybersecurity and Data Analytics</p>
       </div>
+
+      {/* Testimonials */}
+      <div className="hud-divider" />
+      <div className="panel-section-title">FIELD TESTIMONIALS</div>
+      {[
+        {
+          quote: "Mike's ability to translate complex security risks into business terms is unmatched. He makes the board understand cyber risk without dumbing it down.",
+          author: 'Former Colleague',
+          role: 'VP of Technology',
+          company: 'Capital One',
+        },
+        {
+          quote: "When Mike steps in, the situation gets calmer and smarter. He has this rare ability to reduce noise and drive towards solutions during high-pressure incidents.",
+          author: 'Team Member',
+          role: 'Security Engineer',
+          company: 'American Express',
+        },
+        {
+          quote: "A coach, not a critic. Mike builds teams that trust him because he invests in their growth while holding everyone to high standards.",
+          author: 'Direct Report',
+          role: 'Senior Analyst',
+          company: 'Norges Bank',
+        },
+      ].map((t, i) => (
+        <div
+          key={i}
+          style={{
+            border: '1px solid var(--iron-panel-border)',
+            background: 'var(--iron-gold-ghost)',
+            padding: '0.75rem',
+            marginBottom: '0.5rem',
+            position: 'relative',
+          }}
+        >
+          <div style={{
+            position: 'absolute',
+            top: '0.4rem',
+            left: '0.6rem',
+            fontFamily: 'var(--font-hud)',
+            fontSize: '1.5rem',
+            color: 'var(--iron-gold)',
+            opacity: 0.3,
+            lineHeight: 1,
+          }}>
+            "
+          </div>
+          <p style={{
+            fontFamily: 'var(--font-body)',
+            fontSize: '0.82rem',
+            color: 'var(--iron-text-dim)',
+            lineHeight: 1.55,
+            fontStyle: 'italic',
+            paddingLeft: '1rem',
+            marginBottom: '0.5rem',
+          }}>
+            {t.quote}
+          </p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', paddingLeft: '1rem' }}>
+            <div style={{
+              width: 28,
+              height: 28,
+              borderRadius: '50%',
+              background: 'rgba(255, 193, 7, 0.15)',
+              border: '1px solid var(--iron-gold-dim)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontFamily: 'var(--font-hud)',
+              fontSize: '0.6rem',
+              color: 'var(--iron-gold)',
+              flexShrink: 0,
+            }}>
+              {t.author.split(' ').map((n) => n[0]).join('')}
+            </div>
+            <div>
+              <div style={{ fontFamily: 'var(--font-hud)', fontSize: '0.6rem', letterSpacing: '0.08em', color: 'var(--iron-text)' }}>
+                {t.author}
+              </div>
+              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.58rem', color: 'var(--iron-gold)' }}>
+                {t.role} · {t.company}
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

@@ -34,7 +34,7 @@ const DOCK_ITEMS = [
     id: 'comms',
     label: 'COMMS',
     sublabel: 'CHANNEL',
-    emoji: '📡',
+    emoji: '📨',
     title: 'Open Channel',
   },
   {
@@ -49,24 +49,36 @@ const DOCK_ITEMS = [
 export { DOCK_ITEMS };
 
 export default function HUDDock({ openPanels, onOpenPanel }) {
+  // Use flatMap so the separator is a direct flex sibling — not nested inside
+  // a wrapper div (which was causing the COMMS icon to be pushed down)
+  const items = DOCK_ITEMS.flatMap((item, idx) => {
+    const elements = [];
+
+    if (idx === 4) {
+      elements.push(
+        <div key="sep-comms" className="hud-dock-sep" />
+      );
+    }
+
+    const isOpen = openPanels.includes(item.id);
+    elements.push(
+      <DockItem
+        key={item.id}
+        item={item}
+        isOpen={isOpen}
+        onOpen={() => {
+          soundEngine.playPanelOpen();
+          onOpenPanel(item.id);
+        }}
+      />
+    );
+
+    return elements;
+  });
+
   return (
     <div className="hud-dock">
-      {DOCK_ITEMS.map((item, idx) => {
-        const isOpen = openPanels.includes(item.id);
-        return (
-          <div key={item.id}>
-            {idx === 4 && <div className="hud-dock-sep" />}
-            <DockItem
-              item={item}
-              isOpen={isOpen}
-              onOpen={() => {
-                soundEngine.playPanelOpen();
-                onOpenPanel(item.id);
-              }}
-            />
-          </div>
-        );
-      })}
+      {items}
     </div>
   );
 }

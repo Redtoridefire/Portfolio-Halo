@@ -259,12 +259,22 @@ export default function HUDDesktop() {
     setSoundEnabled(enabled);
   };
 
-  // Open personnel panel on first load after a short delay
+  // On desktop mount: start ambient hum + open default panel
   useEffect(() => {
+    // Play pulser-blast.mp3 the moment the HUD appears, fallback to boot chord
+    setTimeout(() => {
+      soundEngine.playFile('pulser-blast', () => soundEngine.playBootComplete(), 0.9);
+      setTimeout(() => soundEngine.startAmbientHum(), 1200);
+    }, 300);
+
     const timer = setTimeout(() => {
       handleOpenPanel('personnel');
-    }, 600);
-    return () => clearTimeout(timer);
+    }, 800);
+
+    return () => {
+      clearTimeout(timer);
+      soundEngine.stopAmbientHum();
+    };
   }, [handleOpenPanel]);
 
   return (
