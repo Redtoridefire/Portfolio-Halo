@@ -58,23 +58,31 @@ export default function JarvisChat() {
     setLoading(true);
 
     try {
-      const history = [...messages, userMsg].slice(-8);
+      // Build messages array in the format the API expects: [{role, content}, ...]
+      const history = [...messages, userMsg]
+        .slice(-8)
+        .map(({ role, content }) => ({ role, content }));
+
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: content, history }),
+        body: JSON.stringify({ messages: history }),
       });
 
+      const data = await res.json();
+
       if (res.ok) {
-        const data = await res.json();
+        // API returns { content: "..." }
+        const reply = data.content || data.message || data.reply || data.response;
         soundEngine.playDataStream();
         setMessages((prev) => [
           ...prev,
-          { role: 'assistant', content: data.message || data.reply || data.response, id: msgIdCounter + 1 },
+          { role: 'assistant', content: reply, id: msgIdCounter + 1 },
         ]);
         setMsgIdCounter((c) => c + 2);
       } else {
-        throw new Error('API error');
+        // Surface the actual API error message if there is one
+        throw new Error(data.error || 'API error');
       }
     } catch {
       setMessages((prev) => [

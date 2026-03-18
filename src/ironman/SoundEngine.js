@@ -55,36 +55,38 @@ class SoundEngine {
   /**
    * Pre-fetch an audio file into cache. Called automatically on init.
    * Silently ignores 404s so missing files never break anything.
+   * Marks the entry as 'failed' on error so playFile knows not to use it.
    */
   _preload(name) {
     if (this._audioCache[name]) return;
     const audio = new Audio(`/sounds/${name}.mp3`);
     audio.preload = 'auto';
-    // Test that the file actually exists — if it 404s, remove from cache
+    audio._failed = false;
     audio.addEventListener('error', () => {
-      delete this._audioCache[name];
+      audio._failed = true;
     }, { once: true });
     this._audioCache[name] = audio;
   }
 
   /**
    * Play a file from /public/sounds/<name>.mp3
-   * Falls back to `fallback()` (a synthesized sound function) if file is
-   * missing, not loaded, or audio is disabled.
+   * Falls back to `fallback()` only if the file is genuinely missing/errored.
+   * Does NOT require readyState >= 2 — the browser buffers and plays fine.
    *
    * @param {string}   name     — filename without extension
    * @param {Function} fallback — called if file unavailable
    * @param {number}   volume   — 0.0 – 1.0, default 1.0
    */
   playFile(name, fallback, volume = 1.0) {
+    if (!this.enabled) return;
     const audio = this._audioCache[name];
-    if (audio && this.enabled && audio.readyState >= 2) {
-      // readyState >= 2 means HAVE_CURRENT_DATA — safe to play
+
+    if (audio && !audio._failed) {
       audio.volume = Math.min(1, volume);
       audio.currentTime = 0;
       audio.play().catch(() => {
-        // Autoplay blocked or file error — run fallback
-        if (fallback) fallback();
+        // Only run fallback if file genuinely errored, not just slow to load
+        if (audio._failed && fallback) fallback();
       });
     } else if (fallback) {
       fallback();
